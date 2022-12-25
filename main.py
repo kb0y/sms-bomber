@@ -208,7 +208,7 @@ def bombing(phone , xx):
 
 
 if __name__ == "__main__":
-    printLow(f"""\033[32;1m[+] \033[1;33mSMS Api's: \033[32;1m{sms_c}\n\033[32;1m[+] \033[1;33mCALL Api's: \033[32;1m{call_c}\n\033[32;1m[+] \033[1;33mDeveloper: \033[32;1mt.me/Dev_Moon""")
+    printLow(f"""\033[32;1m[+] \033[1;33mSMS Api's: \033[32;1m{sms_c}\n\033[32;1m[+] \033[1;33mCALL Api's: \033[32;1m{call_c}\n\033[32;1m[+] \033[1;33mDeveloper: \033[32;1minstagram: @omidnaderivip""")
     num = input(f'\n\n\033[32;1m[$] \033[1m\033[96mEnter Phone Number\n\033[1;33m  Ex:09190000000\n \033[1;31m-> \033[32;1m')
     yy = int(input("\n\033[32;1m[$] \033[1;33mEnter The Count of Round of Bombing\n\033[1;31m-> \033[32;1m"))
     system('clear' if name == 'posix' else 'cls')
