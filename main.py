@@ -5,6 +5,8 @@ from sys import exit
 from os import system, name
 from inspect import getmembers, isfunction 
 from random import choice
+import pyfiglet
+from sys import stdout
 
 def printLow(Str):
     for char in Str:
@@ -208,9 +210,60 @@ def bombing(phone , xx):
 
 
 if __name__ == "__main__":
-    printLow(f"""\033[32;1m[+] \033[1;33mSMS Api's: \033[32;1m{sms_c}\n\033[32;1m[+] \033[1;33mCALL Api's: \033[32;1m{call_c}\n\033[32;1m[+] \033[1;33mDeveloper: \033[32;1minstagram: @omidnaderivip""")
-    num = input(f'\n\n\033[32;1m[$] \033[1m\033[96mEnter Phone Number\n\033[1;33m  Ex:09190000000\n \033[1;31m-> \033[32;1m')
-    yy = int(input("\n\033[32;1m[$] \033[1;33mEnter The Count of Round of Bombing\n\033[1;31m-> \033[32;1m"))
+    # printLow(f"""\033[32;1m[+] \033[1;33msms api's: \033[32;1m{sms_c}\n\033[32;1m[+] \033[1;33mcall api's: \033[32;1m{call_c}""")
+    print("")
+    letters =  pyfiglet.figlet_format('sms bomber')
+    for char in letters:
+            # stdout.write(char)
+            # stdout.flush()
+            # sleep(0.0001/0.01)	
+            str = f""" \033[32;1m[*] \033[1;33msms: \033[32;1mon \n"""    
+    for char in str:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.001/0.02)
+            str = f""" \033[32;1m[*] \033[1;33mcall: \033[32;1mon \n"""    
+    for char in str:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.001/0.02)
+            str = f""" \033[32;1m[*] \033[1;33msend code: \033[32;1mon \n"""    
+    for char in str:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.001/0.02)
+            str = f""" \033[32;1m[*] \033[1;33mnumber: \033[32;1mon \n"""    
+    for char in str:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.001/0.02)
+    print("")
+    print("")
+    def banner():
+        print ('\t         \033[1;34m   ▇▇▇◤▔▔▔▔▔▔▔◥▇▇▇         ')
+        print('\t         \033[1;34m   ▇▇▇▏◥▇◣┊◢▇◤▕▇▇▇       ')
+        print ('\t         \033[1;34m   ▇▇▇▏▃▆▅▎▅▆▃▕▇▇▇          ')
+        print ('\t         \033[1;34m   ▇▇▇▏╱▔▕▎▔▔╲▕▇▇▇           ')
+        print ('\t         \033[1;34m   ▇▇▇◣◣▃▅▎▅▃◢◢▇▇▇\033[2;32m  Code By :\033[2;31m omidnaderi')
+        print ('\t         \033[1;34m   ▇▇▇▇◣◥▅▅▅◤◢▇▇▇▇             ')
+        print ('\t         \033[1;34m   ▇▇▇▇▇◣╲▇╱◢▇▇▇▇▇      ')
+        print ('\t         \033[1;34m   ▇▇▇▇▇▇◣▇◢▇▇▇▇▇▇            ')
+    banner()
+    print("")
+    print("")
+    letters =  pyfiglet.figlet_format('sms bomber')
+    for char in letters:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.0001/0.01)	
+            str = f""" \033[1;36m WELCOME TO SMS BOMBER """    
+    for char in str:
+            stdout.write(char)
+            stdout.flush()
+            sleep(0.001/0.02)
+
+    num = input(f'\n\n\033[32;1m[(*)] \033[1m\033[96mEnter Phone Number\n\033[1;33m  Ex:09190000000\n \033[1;31m-> \033[32;1m')
+    yy = int(input("\n\033[32;1m[+] \033[1;33mEnter The Count of Round of Bombing\n\033[1;31m-> \033[32;1m"))
     system('clear' if name == 'posix' else 'cls')
     printLow("\033[32;1m[+]\033[1;33m Phone Number:\033[1m\033[96m {}\n\033[32;1m[+]\033[1;33m Rounds:\033[1m\033[96m {}\n\n".format(num,yy))
     printLow(f"\033[32;1m[\033[1;31mStart\033[32;1m]\n")
