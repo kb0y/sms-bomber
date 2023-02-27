@@ -6,4 +6,4 @@ sms bomber for messages and calls ( +98 )
 
 <br>
 
-💎 Group: https://t.me/wizwizxui
+💎 Group: https://t.me/wizwizdev
